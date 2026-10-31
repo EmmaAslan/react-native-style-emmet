@@ -2,6 +2,12 @@
   "name": "react-native-style-emmet",
   "displayName": "React Native Style Emmet",
   "description": "Expands React Native component abbreviations into JSX with matching styles references on Tab, e.g. View-container → <View style={styles.container}>.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EmmaAslan/react-native-style-emmet.git"
+  },
+  "license": "MIT",
+  "publisher": "emmaaslan",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.144.0"
