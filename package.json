@@ -1,0 +1,51 @@
+{
+  "name": "react-native-style-emmet",
+  "displayName": "React Native Style Emmet",
+  "description": "Expands React Native component abbreviations into JSX with matching styles references on Tab, e.g. View-container → <View style={styles.container}>.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.144.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescript",
+    "onLanguage:typescriptreact"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "rnStyleEmmet.expand",
+        "title": "RN Style Emmet: Expand"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "rnStyleEmmet.expand",
+        "key": "tab",
+        "when": "editorTextFocus && !editorReadonly && rnStyleEmmet.match"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.144.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "24.x",
+    "eslint": "^10.5.0",
+    "@vscode/test-cli": "^0.0.15",
+    "@vscode/test-electron": "^3.0.0"
+  },
+  "overrides": {
+    "diff": "^8.0.4",
+    "serialize-javascript": "^7.0.6"
+  }
+}
